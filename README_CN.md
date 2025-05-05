@@ -5,11 +5,17 @@
 ## 概述
 
 SikkerBox 是一个同时支持安卓端、ios端、macos端、windows端访问的跨平台多平台网络工具包，将实现如下功能：
+
 （1）Microsoft Authenticator身份验证类APP的2FA认证功能，允许添加github等信息实现2FA认证。
+
 （2）根据用户输入域名或IP进行Ping诊断功能。
+
 （3）域名whois查询功能。
+
 （4）DNS反查功能。
+
 （5）IP计算器功能。
+
 （6）Virtual Hosts功能，根据用户从本设备选择hosts文件，或编辑hosts文件，并设置开关开启功能，实现网络访问时优先读取此hosts文件。
 
 目前已实现上述第（1）点功能，即实现了安全的双因素认证（2FA），可为您的在线账户生成基于时间的一次性密码（TOTP），为您的数字生活提供了一个强大且用户友好的额外安全层解决方案。
@@ -46,6 +52,42 @@ SikkerBox 使用 Flutter 构建，遵循以下关键原则：
 
 - Flutter 团队提供的优秀框架
 - 所有使本项目成为可能的软件包维护者 
+
+## Github 开启/配置/更换 two-factor authentication (2FA) 双因素认证
+
+### 未开启2FA
+
+1. 下载并安装SikkerBox。
+
+2. 登录Github后，点击页面最右上角的头像，再点击Settings进入设置页面。
+
+3. 再在左侧Access菜单中点击Password and authentication，然后在【Two-factor authentication】区域点击Enable two-factor authentication（启用双重身份验证）按钮。
+
+4. 打开SikkerBox，直接点击app右下角的扫描图标，对准上述Github出现的二维码。扫描成功后自动添加到主界面的账户列表中。
+
+5. 在SikkerBox主界面账户列表中点击对应的Github账号，进去可查看到一次性密码，返回Github页面在二维码下面的Verify the code from the app方框中输入此一次性密码，验证通过后会自动跳转到Download your recovery codes页面，务必下载并将恢复码保存在安全的地方。
+
+6. 然后，点击I have saved my recovery codes按钮，在出现的另一页面中点击Done按钮，即完成开启2FA。
+
+7. 下次如果重新登录Github，或者在另外设备上登录Github要求输入2FA认证吗时，打开SikkerBox，在SikkerBox主界面账户列表中点击对应的Github账号，进去可查看到一次性密码，输入此一次性密码即可登录成功。
+
+### 更换2FA app
+
+1. 下载并安装SikkerBox。
+
+2. 使用原有2FA app成功登录Github后，点击页面最右上角的头像，再点击Settings进入设置页面。
+
+3. 再在左侧Access菜单中点击Password and authentication，然后在【Two-factor authentication】的Two-factor methods区域，点击Authenticator ap(Configured)右边的Edit按钮。
+
+4. 打开SikkerBox，直接点击app右下角的扫描图标，对准上述Github出现的二维码。扫描成功后自动添加到主界面的账户列表中。
+
+5. 在SikkerBox主界面账户列表中点击对应的Github账号，进去可查看到一次性密码，返回Github页面在二维码下面的Verify the code from the app方框中输入此一次性密码，验证通过后点击Save保存按钮即可完成2FA app替换。
+
+## FAQ
+
+1. 在SikkerBox中不小心删除账户，无法进行2FA认证登录Github，怎么办？
+
+答：使用Github恢复码成功登录Github，然后使用上述更换2FA app步骤重新绑定SikkerBox即可。
 
 ![sikkerbox app 软件截图1](./sikkerbox1.jpg)
 ![sikkerbox app 软件截图2](./sikkerbox2.jpg)
