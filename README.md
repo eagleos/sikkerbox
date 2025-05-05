@@ -59,11 +59,11 @@ Currently temporarily provide android apk installation package, just directly do
 
 1. Download and install SikkerBox.
 
-2. After logging in to Github, click on your avatar in the top right corner of the page, and then click Settings to enter the Settings page. 3.
+2. After logging in to Github, click on your avatar in the top right corner of the page, and then click Settings to enter the Settings page.
 
 3. Click Password and authentication in the Access menu on the left, and then click Enable two-factor authentication in the Two-Factor authentication area.
 
-4. Open SikkerBox, click the scanning icon at the bottom right corner of the app, and point it at the QR code that appears on Github as mentioned above. After successful scanning, it will be automatically added to the account list in the main interface. 5.
+4. Open SikkerBox, click the scanning icon at the bottom right corner of the app, and point it at the QR code that appears on Github as mentioned above. After successful scanning, it will be automatically added to the account list in the main interface.
 
 5. Click the corresponding Github account in the account list of the main interface of SikkerBox, you can see the one-time password, return to the Github page and enter the one-time password in the Verify the code from the app box below the QR code, after verification, it will automatically jump to the Download your recovery codes page, make sure to download and download your recovery codes. Once verified, you will be redirected to the Download your recovery codes page, so be sure to download and save your recovery codes in a safe place.
 
@@ -75,7 +75,7 @@ Currently temporarily provide android apk installation package, just directly do
 
 1. Download and install SikkerBox.
 
-2. After successfully logging in to Github using the original 2FA app, click on your avatar at the top right corner of the page, and then click Settings to enter the Settings page. 3.
+2. After successfully logging in to Github using the original 2FA app, click on your avatar at the top right corner of the page, and then click Settings to enter the Settings page.
 
 3. Click Password and authentication in the Access menu on the left, and then in the Two-factor methods area of [Two-factor authentication], click the Edit button to the right of Authenticator ap(Configured). button to the right of Authenticator ap (Configured).
 
