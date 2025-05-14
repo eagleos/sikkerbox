@@ -89,9 +89,21 @@ SikkerBox 使用 Flutter 构建，遵循以下关键原则：
 
 答：使用Github恢复码成功登录Github，然后使用上述更换2FA app步骤重新绑定SikkerBox即可。
 
-![sikkerbox app 软件截图1](./sikkerbox1.jpg)
-![sikkerbox app 软件截图2](./sikkerbox2.jpg)
-![sikkerbox app 软件截图3](./sikkerbox3.jpg)
-![sikkerbox app 软件截图4](./sikkerbox4.jpg)
-![sikkerbox app 软件截图5](./sikkerbox5.jpg)
-![sikkerbox app 软件截图6](./sikkerbox6.jpg)
+## 贡献者
+
+欢迎参与本app测试，参与者将会在下面表格中列出以示感谢！
+
+| 手机机型               | 测试版本  |   测试结果  | 最新测试时间     | 测试者   |
+|--------------------|-------|-------|------------| -------|
+| vivo IQOO Neo5     | 1.0.0 |✅| 2025.05.14 |eagle|
+| vivo IQOO Neo5 活力版 | 1.0.0  |✅| 2025.05.14 |eagle|
+
+
+![sikkerbox app 软件截图7](sikkerbox7.jpg)
+![sikkerbox app 软件截图8](sikkerbox8.jpg)
+![sikkerbox app 软件截图9](sikkerbox9.jpg)
+![sikkerbox app 软件截图10](sikkerbox10.jpg)
+![sikkerbox app 软件截图11](sikkerbox11.jpg)
+![sikkerbox app 软件截图12](sikkerbox12.jpg)
+![sikkerbox app 软件截图13](sikkerbox13.jpg)
+
