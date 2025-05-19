@@ -4,49 +4,78 @@
 
 ## Overview
 
-SikkerBox is a cross-platform multi-platform network toolkit that simultaneously supports Android, ios, macos, and windows access, and will realize the following functions:
+SikkerBox is a cross-platform multi-platform network toolkit that supports Android, ios, macos and windows access at the same time.
 
-(1) 2FA authentication function of Microsoft Authenticator authentication class APP, allowing adding github and other information to realize 2FA authentication.
+`Sikker` comes from the Norwegian word meaning `security` and `Box` stands for toolbox.
 
-(2) Ping diagnostic function based on user input domain name or IP.
+With a modern and clear UI layout and instructions, SikkerBox is designed to be the Swiss Army Knife of networking on your phone, providing a powerful and user-friendly security layer solution for your digital life.
 
-(3) Domain whois query function.
+SikkerBox currently implements the following features:
+
+(1) Highly secure and reliable two-factor authentication (2FA), supporting more than 1000 websites and online apps that provide two-factor authentication, including github and gitlab.
+
+(2) Port detection, supporting the detection of user's local public IP and Internet server port opening.
+
+(3) IP address localization query, supporting the user's local public IP and Internet IP address localization query.
+
+(4) Internationalized language support, complete support for Chinese and English interface switching, all tips and error messages have been internationalized.
+
+SikkerBox will realize the following functions in the future:
+
+(1) Wifi scanner.
+
+(2) Ping diagnostic function according to user input domain name or IP.
+
+(3) Domain name whois query function.
 
 (4) DNS reverse lookup function.
 
 (5) IP calculator function.
 
-(6) Virtual Hosts function, according to the user from the device to select the hosts file, or edit the hosts file, and set the switch to enable the function, to realize the network access priority read the hosts file.
-
-Currently, the function of point (1) above has been realized, i.e., it realizes secure two-factor authentication (2FA), which can generate time-based one-time passwords (TOTP) for your online accounts, and provides a powerful and user-friendly extra security layer solution for your digital life.
+(6) Virtual Hosts function, according to the user from the device to select the hosts file, or edit the hosts file, and set the switch to turn on the function, to realize the network access priority read this hosts file.
 
 ## 2FA Features
 
-- **Secure Storage**: All account secrets are encrypted and stored securely using Hive database
-- **QR Code Scanning**: Easily add accounts by scanning QR codes
-- **Manual Entry**: Support for manually entering account information
-- **Time-Based OTP**: Generate time-based one-time passwords (TOTP) compliant with RFC 6238
-- **Offline Access**: Works completely offline after setup
-- **Multi-Platform Support**: Available for Android, iOS, Windows, macOS, Linux, and web
-- **Copy to Clipboard**: Quick copy functionality for easy code entry
-- **Error Handling**: Robust error handling with detailed logging
-- **Minimalist UI**: Clean, intuitive interface focused on usability
+- **Secure storage**: all account keys are encrypted and securely stored using a local Hive database, no data is transferred to any servers and all data remains on your device
+- **Privacy-focused**: no analytics or tracking
+- **QR code scanning**: Easily add accounts by scanning QR codes
+- **Manual Entry**: Supports manual entry of account information
+- **Time-based OTP**: Generate RFC 6238-compliant time-based one-time passwords (TOTP)/two-factor codes (2FA codes), with authentication codes automatically updated every 30 seconds.
+- **Offline access**: works completely offline after setup is complete
+- **Multi-platform support**: for Android, iOS, Windows, macOS, Linux and Web
+- **Copy to Clipboard**: Quick copy function for easy CAPTCHA entry
+- **Minimalist interface**: clean, intuitive modern style interface with a focus on ease of use
 
-## 2FA Technical Details
+## Port Check Features
 
-SikkerBox is built using Flutter and follows these key principles:
+- Includes the function of automatically obtaining the user's public IP
+- Provides a list of commonly used ports for quick one-click selection.
+- Support detecting any port of any IP address
+- Port detection results are displayed in different colors (open, closed, error), providing clear open/closed status feedback.
+- Provide friendly loading indicators and error alerts.
 
-- **Security First**: No data is transmitted to any server; all data remains on your device
-- **Privacy Focused**: No analytics or tracking
-- **Open Source**: Transparent codebase available for review
-- **Modern Architecture**: Utilizes Provider pattern for state management
-- **Clean Code**: Well-structured codebase with clear separation of concerns
+## IP Address Location Query Features
+
+- Realizes the function of automatically obtaining the user's public IP address.
+- Supports users to input any IP address and query its attribution.
+- The top area displays the user's current IP address and attribute.
+- The middle area provides query form, input box with search icon and query button.
+- The query result area clearly shows the queried IP and attribute information.
+- Use different colors to indicate success and error status
 
 ## Getting Started
 
 ### Installation
 
 Currently temporarily provide android apk installation package, just directly download the apk and install it.
+
+download url:
+
+https://sikkerbox.sourceforge.io
+
+https://github.com/eagleos/sikkerbox
+
+https://www.pgyer.com/VT9KrSgd
 
 ## Acknowledgments
 
@@ -77,7 +106,7 @@ Currently temporarily provide android apk installation package, just directly do
 
 2. After successfully logging in to Github using the original 2FA app, click on your avatar at the top right corner of the page, and then click Settings to enter the Settings page.
 
-3. Click Password and authentication in the Access menu on the left, and then in the Two-factor methods area of [Two-factor authentication], click the Edit button to the right of Authenticator ap(Configured). button to the right of Authenticator ap (Configured).
+3. Click Password and authentication in the Access menu on the left, and then in the Two-factor methods area of [Two-factor authentication], click the Edit button to the right of Authenticator app(Configured). button to the right of Authenticator ap (Configured).
 
 4. Open SikkerBox, click the scanning icon at the bottom right corner of the app, and point it at the QR code on Github as mentioned above. After successful scanning, it will be automatically added to your account list in the main interface.
 
@@ -95,14 +124,19 @@ Contributors are welcome to participate in the testing of this app and will be l
 
 | Phone Models | Test Versions | Test Results | Latest Test Time | Testers |
 |--------------------|-------|-------|------------| -------|
-| vivo IQOO Neo5     | 1.0.0 |✅| 2025.05.14 |eagle|
-| vivo IQOO Neo5 活力版 | 1.0.0  |✅| 2025.05.14 |eagle|
+| vivo IQOO Neo5     | 1.0.1 |✅| 2025.05.19 |eagle|
+| vivo IQOO Neo5 活力版 | 1.0.1  |✅| 2025.05.19 |eagle|
 
+We are always trying to improve our app! Let us know if you have any suggestions or feedback - we'd love to hear from you!
 
-![sikkerbox app software screenshots 14](sikkerbox14.jpg)
+![sikkerbox app software screenshots 26](sikkerbox26.jpg)
 ![sikkerbox app software screenshots 15](sikkerbox15.jpg)
 ![sikkerbox app software screenshots 16](sikkerbox16.jpg)
 ![sikkerbox app software screenshots 17](sikkerbox17.jpg)
 ![sikkerbox app software screenshots 18](sikkerbox18.jpg)
 ![sikkerbox app software screenshots 19](sikkerbox19.jpg)
-![sikkerbox app software screenshots 20](sikkerbox20.jpg)
+![sikkerbox app software screenshots 27](sikkerbox27.jpg)
+![sikkerbox app software screenshots 28](sikkerbox28.jpg)
+![sikkerbox app software screenshots 29](sikkerbox29.jpg)
+![sikkerbox app software screenshots 30](sikkerbox30.jpg)
+![sikkerbox app software screenshots 32](sikkerbox32.jpg)

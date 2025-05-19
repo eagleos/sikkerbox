@@ -1,12 +1,28 @@
 # SikkerBox
 
-[English Documentation](./README.md)
+[English Documentation](README.md)
 
 ## 概述
 
-SikkerBox 是一个同时支持安卓端、ios端、macos端、windows端访问的跨平台多平台网络工具包，将实现如下功能：
+SikkerBox 是一个同时支持安卓端、ios端、macos端、windows端访问的跨平台多平台网络工具包。
 
-（1）Microsoft Authenticator身份验证类APP的2FA认证功能，允许添加github等信息实现2FA认证。
+`Sikker`源于挪威语，意为`安全`，`Box`代表工具箱。
+
+SikkerBox 采用现代、清晰的UI界面布局和指示，旨在打造成手机上的网络瑞士军刀，为您的数字生活提供一个功能强大且用户友好的安全层解决方案。
+
+SikkerBox 目前已实现如下功能：
+
+（1）高度安全可靠的双因素身份验证 (2FA)，支持包括github、gitlab在内的超过 1000 多种提供双因素身份登录验证的网站和在线App。
+
+（2）端口检测，支持用户本机公网IP及互联网服务器端口开放检测。
+
+（3）IP地址归属地查询，支持用户本机公网IP及互联网IP地址归属地查询。
+
+（4）国际化语言支持，完整支持中英文界面切换，所有提示和错误信息均已国际化。
+
+SikkerBox 未来将实现如下功能：
+
+（1）Wifi扫描器。
 
 （2）根据用户输入域名或IP进行Ping诊断功能。
 
@@ -18,35 +34,48 @@ SikkerBox 是一个同时支持安卓端、ios端、macos端、windows端访问�
 
 （6）Virtual Hosts功能，根据用户从本设备选择hosts文件，或编辑hosts文件，并设置开关开启功能，实现网络访问时优先读取此hosts文件。
 
-目前已实现上述第（1）点功能，即实现了安全的双因素认证（2FA），可为您的在线账户生成基于时间的一次性密码（TOTP），为您的数字生活提供了一个强大且用户友好的额外安全层解决方案。
-
 ## 2FA 功能特点
 
-- **安全存储**：所有账户密钥均使用 Hive 数据库进行加密和安全存储
+- **安全存储**：所有账户密钥均使用本地 Hive 数据库进行加密和安全存储，不向任何服务器传输数据，所有数据保留在您的设备上
+- **注重隐私**：无分析或跟踪
 - **二维码扫描**：通过扫描二维码轻松添加账户
 - **手动输入**：支持手动输入账户信息
-- **基于时间的 OTP**：生成符合 RFC 6238 标准的基于时间的一次性密码
+- **基于时间的 OTP**：生成符合 RFC 6238 标准的基于时间的一次性密码（TOTP）/双因素代码 (2FA 代码)，验证码每 30 秒自动更新一次。
 - **离线访问**：设置完成后完全离线工作
 - **多平台支持**：适用于 Android、iOS、Windows、macOS、Linux 和 Web
 - **复制到剪贴板**：快速复制功能，方便输入验证码
-- **错误处理**：具有详细日志记录的强大错误处理机制
-- **极简界面**：干净、直观的界面，注重易用性
+- **极简界面**：干净、直观的现代风格界面，注重易用性
 
-## 2FA 技术细节
+## 端口检测 功能特点
 
-SikkerBox 使用 Flutter 构建，遵循以下关键原则：
+- 包含自动获取用户公网IP的功能
+- 提供常用端口列表供用户快速一键选择
+- 支持检测任意IP地址的任意端口
+- 端口检测结果使用不同颜色进行显示（开放、关闭、错误），提供明确的开放/关闭状态反馈
+- 提供友好的加载指示器和错误提示
 
-- **安全第一**：不向任何服务器传输数据；所有数据保留在您的设备上
-- **注重隐私**：无分析或跟踪
-- **开源**：透明的代码库可供审查
-- **现代架构**：使用 Provider 模式进行状态管理
-- **整洁代码**：结构良好的代码库，关注点分离清晰
+## IP地址归属地查询 功能特点
+
+- 实现了自动获取用户公网IP地址的功能
+- 支持用户输入任意IP地址并查询其归属地
+- 顶部区域显示用户当前IP和归属地
+- 中间区域提供查询表单，带搜索图标的输入框和查询按钮
+- 查询结果区域清晰展示所查询的IP和归属地信息
+- 使用不同颜色提示成功和错误状态
 
 ## 开始使用
 
 ### 安装
 
 目前暂时提供安卓端apk安装包，直接下载apk安装即可。
+
+下载地址：
+
+https://sikkerbox.sourceforge.io
+
+https://github.com/eagleos/sikkerbox
+
+https://www.pgyer.com/VT9KrSgd
 
 ## 致谢
 
@@ -77,7 +106,7 @@ SikkerBox 使用 Flutter 构建，遵循以下关键原则：
 
 2. 使用原有2FA app成功登录Github后，点击页面最右上角的头像，再点击Settings进入设置页面。
 
-3. 再在左侧Access菜单中点击Password and authentication，然后在【Two-factor authentication】的Two-factor methods区域，点击Authenticator ap(Configured)右边的Edit按钮。
+3. 再在左侧Access菜单中点击Password and authentication，然后在【Two-factor authentication】的Two-factor methods区域，点击Authenticator app(Configured)右边的Edit按钮。
 
 4. 打开SikkerBox，直接点击app右下角的扫描图标，对准上述Github出现的二维码。扫描成功后自动添加到主界面的账户列表中。
 
@@ -95,15 +124,19 @@ SikkerBox 使用 Flutter 构建，遵循以下关键原则：
 
 | 手机机型               | 测试版本  |   测试结果  | 最新测试时间     | 测试者   |
 |--------------------|-------|-------|------------| -------|
-| vivo IQOO Neo5     | 1.0.0 |✅| 2025.05.14 |eagle|
-| vivo IQOO Neo5 活力版 | 1.0.0  |✅| 2025.05.14 |eagle|
+| vivo IQOO Neo5     | 1.0.1 |✅| 2025.05.19 |eagle|
+| vivo IQOO Neo5 活力版 | 1.0.1  |✅| 2025.05.19 |eagle|
 
+我们一直在努力改进我们的应用！有任何建议或反馈，请告诉我们——我们很乐意听取您的意见！
 
-![sikkerbox app 软件截图7](sikkerbox7.jpg)
+![sikkerbox app 软件截图21](sikkerbox21.jpg)
 ![sikkerbox app 软件截图8](sikkerbox8.jpg)
 ![sikkerbox app 软件截图9](sikkerbox9.jpg)
 ![sikkerbox app 软件截图10](sikkerbox10.jpg)
 ![sikkerbox app 软件截图11](sikkerbox11.jpg)
 ![sikkerbox app 软件截图12](sikkerbox12.jpg)
-![sikkerbox app 软件截图13](sikkerbox13.jpg)
-
+![sikkerbox app 软件截图22](sikkerbox22.jpg)
+![sikkerbox app 软件截图23](sikkerbox23.jpg)
+![sikkerbox app 软件截图24](sikkerbox24.jpg)
+![sikkerbox app 软件截图25](sikkerbox25.jpg)
+![sikkerbox app 软件截图31](sikkerbox31.jpg)
