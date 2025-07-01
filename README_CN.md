@@ -16,7 +16,7 @@ SikkerBox 采用现代、清晰的UI界面布局和指示，旨在打造成手�
 
 ### 两因素认证(2FA)
 
-高度安全可靠的双因素身份验证 (2FA)，支持包括github、gitlab、google等在内的超过 1000 多种提供双因素身份登录验证的网站和在线App。
+高度安全可靠的双因素身份验证 (2FA)，支持包括github、gitlab、google、PayPal等在内的超过 1000 多种提供双因素身份登录验证的网站和在线App。
 
 - **安全账户管理**：通过加密方式安全地存储和管理您的2FA账户
 - **二维码扫描**：通过扫描二维码轻松添加新账户
@@ -82,11 +82,13 @@ SikkerBox优先考虑您的隐私和安全：
 
 下载地址：
 
+https://www.pgyer.com/VT9KrSgd
+
+https://play.google.com/store/apps/details?id=com.sikkerbox.eagle
+
 https://sikkerbox.sourceforge.io
 
 https://github.com/eagleos/sikkerbox
-
-https://www.pgyer.com/VT9KrSgd
 
 ## 致谢
 
@@ -137,6 +139,30 @@ https://www.pgyer.com/VT9KrSgd
 |--------------------|-------|-------|------------| -------|
 | vivo IQOO Neo5     | 1.0.2 |✅| 2025.05.27 |eagle|
 | vivo IQOO Neo5 活力版 | 1.0.2 |✅| 2025.05.27 |eagle|
+| 华为畅享9 Plus（Android 8.1）      | 1.0.2 |✅| 2025.05.29 | eagle       |
+| Schok SV55216A（Android 10）      | 1.0.2 |✅| 2025.06.19 | closed test |
+| OnePlus 8T（Android 11）          | 1.0.2 |✅| 2025.06.19 | closed test |
+| Huawei Y9 Prime 2019（Android 9） | 1.0.2 |✅| 2025.06.19 | closed test |
+| Vivo Y35（Android 13）            | 1.0.2 |✅| 2025.06.19 | closed test |
+| Tecno SPARK 8 Pro（Android 11）   | 1.0.2 |✅| 2025.06.19 | closed test |
+| Oppo A52（Android 10）            | 1.0.2 |✅| 2025.06.19 | closed test |
+| Vivo V50 Lite（Android 15）       | 1.0.2 |✅| 2025.06.19 | closed test |
+| Realme 6（Android 10）            | 1.0.2 |✅| 2025.06.19 | closed test |
+| Vivo V2058（Android 11）          | 1.0.2 |✅| 2025.06.19 | closed test |
+| Qsmart Smart 8（Android 12）      | 1.0.2 |✅| 2025.06.19 | closed test |
+| Samsung	Galaxy A15（Android 14） | 1.0.2 |✅| 2025.06.19 | closed test |
+| Redmi Note 12（Android 12）       | 1.0.2 |✅| 2025.06.19 | closed test |
+| Oppo Reno11 F 5G（Android 14）    | 1.0.2 |✅| 2025.06.19 | closed test |
+| QSmart Ultra（Android 13）        | 1.0.2 |✅| 2025.06.19 | closed test |
+| Redmi A3x（Android 14）           | 1.0.2 |✅| 2025.06.19 | closed test |
+| Vivo	Y28s 5G（Android 14）        | 1.0.2 |✅| 2025.06.19 | closed test |
+| Redmi 13C（Android 13）           | 1.0.2 |✅| 2025.06.19 | closed test |
+| Google Pixel 6（Android 12）      | 1.0.2 |✅| 2025.06.19 | closed test |
+| Vivo 1906（Android 9）            | 1.0.2 |✅| 2025.06.19 | closed test |
+| Realme 6i（Android 10）           | 1.0.2 |✅| 2025.06.19 | closed test |
+| LGE G Pad 5 10.1 FHD（Android 9） | 1.0.2 |✅| 2025.06.19 | closed test |
+| Oppo A3s（Android 8.1）           | 1.0.2 |✅| 2025.06.19 | closed test |
+| Redmi Note 11（Android 11）       | 1.0.2 |✅| 2025.06.19 | closed test |
 
 我们一直在努力改进我们的应用！有任何建议或反馈，请告诉我们——我们很乐意听取您的意见！
 

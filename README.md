@@ -16,7 +16,7 @@ With a modern and clear UI layout and instructions, SikkerBox is designed to be 
 
 ### Two-Factor Authentication (2FA)
 
-Highly secure and reliable two-factor authentication (2FA), supporting more than 1000 websites and online apps that provide two-factor authentication, including github, gitlab, google, etc. .
+Highly secure and reliable two-factor authentication (2FA), supporting more than 1000 websites and online apps that provide two-factor authentication, including github, gitlab, google, PayPal etc. .
 
 - **Secure Account Management**: Store and manage your 2FA accounts securely with encryption
 - **QR Code Scanning**: Easily add new accounts by scanning QR codes
@@ -82,6 +82,8 @@ Currently temporarily provide android apk installation package, just directly do
 
 download url:
 
+https://play.google.com/store/apps/details?id=com.sikkerbox.eagle
+
 https://sikkerbox.sourceforge.io
 
 https://github.com/eagleos/sikkerbox
@@ -136,7 +138,31 @@ Contributors are welcome to participate in the testing of this app and will be l
 | Phone Models | Test Versions | Test Results | Latest Test Time | Testers |
 |--------------------|---------------|-------|------------------| -------|
 | vivo IQOO Neo5     | 1.0.2         |✅| 2025.05.27       |eagle|
-| vivo IQOO Neo5 活力版 | 1.0.2         |✅| 2025.05.27       |eagle|
+| Vivo IQOO Neo5 Lite             | 1.0.2         |✅| 2025.05.27       |eagle|
+| Huawei Y9 Plus（Android 8.1）     | 1.0.2 |✅| 2025.05.29 | eagle       |
+| Schok SV55216A（Android 10）      | 1.0.2 |✅| 2025.06.19 | closed test |
+| OnePlus 8T（Android 11）          | 1.0.2 |✅| 2025.06.19 | closed test |
+| Huawei Y9 Prime 2019（Android 9） | 1.0.2 |✅| 2025.06.19 | closed test |
+| Vivo Y35（Android 13）            | 1.0.2 |✅| 2025.06.19 | closed test |
+| Tecno SPARK 8 Pro（Android 11）   | 1.0.2 |✅| 2025.06.19 | closed test |
+| Oppo A52（Android 10）            | 1.0.2 |✅| 2025.06.19 | closed test |
+| Vivo V50 Lite（Android 15）       | 1.0.2 |✅| 2025.06.19 | closed test |
+| Realme 6（Android 10）            | 1.0.2 |✅| 2025.06.19 | closed test |
+| Vivo V2058（Android 11）          | 1.0.2 |✅| 2025.06.19 | closed test |
+| Qsmart Smart 8（Android 12）      | 1.0.2 |✅| 2025.06.19 | closed test |
+| Samsung	Galaxy A15（Android 14） | 1.0.2 |✅| 2025.06.19 | closed test |
+| Redmi Note 12（Android 12）       | 1.0.2 |✅| 2025.06.19 | closed test |
+| Oppo Reno11 F 5G（Android 14）    | 1.0.2 |✅| 2025.06.19 | closed test |
+| QSmart Ultra（Android 13）        | 1.0.2 |✅| 2025.06.19 | closed test |
+| Redmi A3x（Android 14）           | 1.0.2 |✅| 2025.06.19 | closed test |
+| Vivo	Y28s 5G（Android 14）        | 1.0.2 |✅| 2025.06.19 | closed test |
+| Redmi 13C（Android 13）           | 1.0.2 |✅| 2025.06.19 | closed test |
+| Google Pixel 6（Android 12）      | 1.0.2 |✅| 2025.06.19 | closed test |
+| Vivo 1906（Android 9）            | 1.0.2 |✅| 2025.06.19 | closed test |
+| Realme 6i（Android 10）           | 1.0.2 |✅| 2025.06.19 | closed test |
+| LGE G Pad 5 10.1 FHD（Android 9） | 1.0.2 |✅| 2025.06.19 | closed test |
+| Oppo A3s（Android 8.1）           | 1.0.2 |✅| 2025.06.19 | closed test |
+| Redmi Note 11（Android 11）       | 1.0.2 |✅| 2025.06.19 | closed test |
 
 We are always trying to improve our app! Let us know if you have any suggestions or feedback - we'd love to hear from you!
 
